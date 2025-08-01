@@ -15,6 +15,7 @@
 ### ADR
 
 - [ADR-0001](./docs/ADR/decisions/0001-init.md) - Init project
+- [ADR-0002](./docs/ADR/decisions/0002-model-selection-for-bot-support-components.md) - Model Selection for Bot Support Components
 
 ### Architecture
 
@@ -78,5 +79,5 @@ Rel(customer, projectStatus, "Uses")
 
 **Use cases**:
 
-- [UC-1](./internal/usecases/shop/order/state) - Research state of order
-- [UC-2](./internal/usecases/project/status) - Status of project (GitHub MCP integration)
+- [UC-1](./src/usecases/shop/order/state) - Research state of order
+- [UC-2](./src/usecases/project/status) - Status of project (GitHub MCP integration)

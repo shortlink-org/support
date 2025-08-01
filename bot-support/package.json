@@ -1,0 +1,40 @@
+{
+  "name": "bot-support",
+  "version": "1.0.0",
+  "description": "A TypeScript-based bot support service designed to handle customer inquiries, order management, and provide intelligent responses using event-driven architecture and MCP (Model Context Protocol) services",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "bot",
+    "support",
+    "ai",
+    "mcp",
+    "github",
+    "event-driven",
+    "typescript"
+  ],
+  "author": "Shortlink Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.0",
+    "@mastra/core": "^0.12.1",
+    "@mastra/libsql": "^0.12.0",
+    "@mastra/mcp": "^0.10.9",
+    "@mastra/memory": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}

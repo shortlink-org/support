@@ -53,4 +53,7 @@ note right: Return formatted status
 - Uses GitHub MCP for secure API access
 - Caches frequently requested data for performance
 - Provides both summary and detailed status views
-- Supports filtering by time range and status type 
+- Supports filtering by time range and status type
+
+### References
+- [Beyond the Chatbot: Event-Driven Agents in Action](https://www.docker.com/blog/beyond-the-chatbot-event-driven-agents-in-action/) - Docker blog post on building event-driven applications with agentic AI using GitHub MCP and Docker MCP Gateway 
