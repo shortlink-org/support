@@ -8,6 +8,10 @@
 > [!NOTE]
 > A Go-based bot support service designed to handle customer inquiries, order management, and provide intelligent responses using event-driven architecture and MCP (Model Context Protocol) services.
 
+### Documentation
+
+- [Environment Setup](./docs/ENVIRONMENT.md) - Configuration and environment variables
+
 ### ADR
 
 - [ADR-0001](./docs/ADR/decisions/0001-init.md) - Init project
@@ -60,6 +64,7 @@ UseCase(researchOrder, "Research Order State", "Query and retrieve order status 
 UseCase(trackOrder, "Track Order Progress", "Monitor order processing and delivery status")
 UseCase(handleInquiry, "Handle Customer Inquiry", "Process and respond to customer questions")
 UseCase(generateReport, "Generate Support Report", "Create reports on support interactions and metrics")
+UseCase(projectStatus, "Project Status", "Get project status and task information via GitHub MCP")
 
 Rel(customer, researchOrder, "Uses")
 Rel(customer, trackOrder, "Uses")
@@ -67,8 +72,11 @@ Rel(customer, handleInquiry, "Uses")
 Rel(supportAgent, researchOrder, "Uses")
 Rel(supportAgent, handleInquiry, "Uses")
 Rel(supportAgent, generateReport, "Uses")
+Rel(supportAgent, projectStatus, "Uses")
+Rel(customer, projectStatus, "Uses")
 ```
 
 **Use cases**:
 
 - [UC-1](./internal/usecases/shop/order/state) - Research state of order
+- [UC-2](./internal/usecases/project/status) - Status of project (GitHub MCP integration)

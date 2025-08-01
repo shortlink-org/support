@@ -1,0 +1,16 @@
+services:
+  mcp-gateway:
+    image: docker/mcp-gateway:latest
+    command:
+      - --transport=sse
+      - --servers=github-official
+      - --tools=get_commit,get_pull_request,get_pull_request_diff,get_pull_request_files,get_file_contents,add_issue_comment,get_issue_comments,update_pull_request
+    use_api_socket: true
+    ports:
+      - 8811:8811
+    secrets:
+      - mcp_secret
+
+secrets:
+  mcp_secret:
+    file: .env 
