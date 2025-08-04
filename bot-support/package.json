@@ -2,12 +2,14 @@
   "name": "bot-support",
   "version": "1.0.0",
   "description": "A TypeScript-based bot support service designed to handle customer inquiries, order management, and provide intelligent responses using event-driven architecture and MCP (Model Context Protocol) services",
-  "main": "dist/index.js",
+  "main": "main.ts",
   "scripts": {
-    "dev": "tsx src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev-mastra\" \"npm run dev-server\"",
+    "dev-server": "nodemon --exec tsx src/main.ts",
+    "dev-mastra": "mastra dev",
+    "build": "mastra build",
+    "start": "tsx src/index.ts"
   },
   "keywords": [
     "bot",
@@ -30,11 +32,20 @@
     "@mastra/core": "^0.12.1",
     "@mastra/libsql": "^0.12.0",
     "@mastra/mcp": "^0.10.9",
-    "@mastra/memory": "^0.12.0"
+    "@mastra/memory": "^0.12.0",
+    "ai": "^5.0.0",
+    "mastra": "^0.10.18",
+    "zod": "^4.0.14"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
     "tsx": "^4.20.3",
     "typescript": "^5.9.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "ai": "^5.0.0",
+      "@ai-sdk/openai": "^2.0.0"
+    }
   }
 }

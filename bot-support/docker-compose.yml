@@ -15,6 +15,7 @@ services:
     build:
       context: .
       target: dev
+    command: ["npm", "run", "dev-server"]
     ports:
       - 4111:4111
     environment:
@@ -45,4 +46,5 @@ models:
 
 secrets:
   mcp_secret:
-    file: .env 
+    file: .env
+    
