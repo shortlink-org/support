@@ -33,6 +33,7 @@ build/
 *.dll
 *.so
 *.dylib
+.mastra
 
 # Go specific
 *.test
