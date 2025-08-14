@@ -26,7 +26,7 @@ importers:
         version: 0.10.10(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)
       '@mastra/memory':
         specifier: ^0.12.0
-        version: 0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))
+        version: 0.12.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))
       ai:
         specifier: ^5.0.0
         version: 5.0.13(zod@4.0.17)
@@ -624,13 +624,19 @@ packages:
       '@mastra/core': '>=0.10.2-0 <0.14.0-0'
       zod: ^3.0.0
 
-  '@mastra/memory@0.12.0':
-    resolution: {integrity: sha512-YDuzZoJq1HeDmgA1rtZ94DtzTVc3f39Dh6d/C+9p6Mv52tqPE0LrUSP5BBQOFEnRlw+Yb9v5KCcufnyywaiKaA==}
+  '@mastra/memory@0.12.2':
+    resolution: {integrity: sha512-sS/8DbegoPmQLu2avLtWXiYu+pMYBRQlU4T+lZWi0Ee07B3bN5V7gx3JecQt4ywiB2ut9Fn9copBDXquCoP+2A==}
     peerDependencies:
-      '@mastra/core': '>=0.12.0-0 <0.13.0-0'
+      '@mastra/core': '>=0.13.0-0 <0.14.0-0'
 
   '@mastra/schema-compat@0.10.5':
     resolution: {integrity: sha512-Qhz8W4Hz7b9tNoVW306NMzotVy11bya1OjiTN+pthj00HZoaH7nmK8SWBiX4drS+PyhIqA16X5AenELe2QgZag==}
+    peerDependencies:
+      ai: ^5.0.0
+      zod: ^3.0.0
+
+  '@mastra/schema-compat@0.10.7':
+    resolution: {integrity: sha512-lY1V57fHfCRVafNuwmDEmQJNncVZI+wdOdvL/WbgYWLQmL3YjBl3CrM+7yTOM/gG/GPKm8BRxmqnHLhS1rD1zg==}
     peerDependencies:
       ai: ^5.0.0
       zod: ^3.0.0
@@ -1213,33 +1219,33 @@ packages:
   '@protobufjs/utf8@1.1.0':
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
 
-  '@redis/bloom@5.7.0':
-    resolution: {integrity: sha512-KtBHDH2Aw1BxYDQd87PJsdEmZcpMbD4oPzdBwB4IvSRmMovukO2NNGi5vpCHhCoicS83zu7cjX1fw79uFBZFJA==}
+  '@redis/bloom@5.8.1':
+    resolution: {integrity: sha512-hJOJr/yX6BttnyZ+nxD3Ddiu2lPig4XJjyAK1v7OSHOJNUTfn3RHBryB9wgnBMBdkg9glVh2AjItxIXmr600MA==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@redis/client': ^5.7.0
+      '@redis/client': ^5.8.1
 
-  '@redis/client@5.7.0':
-    resolution: {integrity: sha512-YV3Knspdj9k6H6s4v8QRcj1WBxHt40vtPmszLKGwRUOUpUOLWSlI9oCUjprMDcQNzgSCXGXYdL/Aj6nT2+Ub0w==}
+  '@redis/client@5.8.1':
+    resolution: {integrity: sha512-hD5Tvv7G0t8b3w8ao3kQ4jEPUmUUC6pqA18c8ciYF5xZGfUGBg0olQHW46v6qSt4O5bxOuB3uV7pM6H5wEjBwA==}
     engines: {node: '>= 18'}
 
-  '@redis/json@5.7.0':
-    resolution: {integrity: sha512-VP3wtse1PSB/UjZAV1lWyDrWrrZcwi/cjb3L0lIarcIJ+EbHliB2QPml0Bvjz8F8F0eDJRtChJVXFc+jhGxCtA==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      '@redis/client': ^5.7.0
-
-  '@redis/search@5.7.0':
-    resolution: {integrity: sha512-dDZIq8pZJnT+kZ9xRlLLi2Rvkd792z9eh31QRIwPr5wXjAXeaQ+Nf65em6dLpsxZ60MmhwDwLrBPJpYVjKPBPQ==}
+  '@redis/json@5.8.1':
+    resolution: {integrity: sha512-kyvM8Vn+WjJI++nRsIoI9TbdfCs1/TgD0Hp7Z7GiG6W4IEBzkXGQakli+R5BoJzUfgh7gED2fkncYy1NLprMNg==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@redis/client': ^5.7.0
+      '@redis/client': ^5.8.1
 
-  '@redis/time-series@5.7.0':
-    resolution: {integrity: sha512-AJTF9sz3y1MJAukgQW4Jw8zt8qGOE3+1d87pufOP35zsFBlHipGscpctoXiNMebfy0114y/FjSprr65LjbJQSQ==}
+  '@redis/search@5.8.1':
+    resolution: {integrity: sha512-CzuKNTInTNQkxqehSn7QiYcM+th+fhjQn5ilTvksP1wPjpxqK0qWt92oYg3XZc3tO2WuXkqDvTujc4D7kb6r/A==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@redis/client': ^5.7.0
+      '@redis/client': ^5.8.1
+
+  '@redis/time-series@5.8.1':
+    resolution: {integrity: sha512-klvdR96U9oSOyqvcectoAGhYlMOnMS3I5UWUOgdBn1buMODiwM/E4Eds7gxldKmtowe4rLJSF1CyIqyZTjy8Ow==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      '@redis/client': ^5.8.1
 
   '@rollup/plugin-alias@5.1.1':
     resolution: {integrity: sha512-PR9zDb+rOzkRb2VD+EuKB7UC41vU5DIwZ5qqCpk0KJudcWAyi8rvYOhS7+L5aZCspw1stTViLgN5v6FF1p5cgQ==}
@@ -2208,8 +2214,8 @@ packages:
   js-base64@3.7.7:
     resolution: {integrity: sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==}
 
-  js-tiktoken@1.0.20:
-    resolution: {integrity: sha512-Xlaqhhs8VfCd6Sh7a1cFkZHQbYTLCwVJJWiHVxBYzLPxW0XsoxBy1hitmjkdIjD3Aon5BXLHFwU5O8WUx6HH+A==}
+  js-tiktoken@1.0.21:
+    resolution: {integrity: sha512-biOj/6M5qdgx5TKjDnFT1ymSpM5tbd3ylwDtrQvFQSu0Z7bBYko2dF+W/aUkXUPuk6IVpRxk/3Q2sHOzGlS36g==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -2611,8 +2617,8 @@ packages:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
 
-  redis@5.7.0:
-    resolution: {integrity: sha512-ZRbiWYBUYdDTopodRjCVwwCLThrkciPW3bOrkdMCW3nYEelBwUGN6SovmACDsiLUB7mnU3mXnaI5f0W7bDcwng==}
+  redis@5.8.1:
+    resolution: {integrity: sha512-RZjBKYX/qFF809x6vDcE5VA6L3MmiuT+BkbXbIyyyeU0lPD47V4z8qTzN+Z/kKFwpojwCItOfaItYuAjNs8pTQ==}
     engines: {node: '>= 18'}
 
   regex-recursion@5.1.1:
@@ -3604,18 +3610,19 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mastra/memory@0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))':
+  '@mastra/memory@0.12.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))':
     dependencies:
       '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.0.17)
+      '@mastra/schema-compat': 0.10.7(ai@5.0.13(zod@4.0.17))(zod@3.25.76)
       '@upstash/redis': 1.35.3
       ai: 5.0.13(zod@3.25.76)
       async-mutex: 0.5.0
-      js-tiktoken: 1.0.20
+      js-tiktoken: 1.0.21
       json-schema: 0.4.0
       pg: 8.16.3
       pg-pool: 3.10.1(pg@8.16.3)
       postgres: 3.4.7
-      redis: 5.7.0
+      redis: 5.8.1
       xxhash-wasm: 1.1.0
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
@@ -3629,6 +3636,14 @@ snapshots:
       zod: 4.0.17
       zod-from-json-schema: 0.0.5
       zod-to-json-schema: 3.24.6(zod@4.0.17)
+
+  '@mastra/schema-compat@0.10.7(ai@5.0.13(zod@4.0.17))(zod@3.25.76)':
+    dependencies:
+      ai: 5.0.13(zod@4.0.17)
+      json-schema: 0.4.0
+      zod: 3.25.76
+      zod-from-json-schema: 0.0.5
+      zod-to-json-schema: 3.24.6(zod@3.25.76)
 
   '@mastra/server@0.13.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@3.25.76)':
     dependencies:
@@ -4501,25 +4516,25 @@ snapshots:
 
   '@protobufjs/utf8@1.1.0': {}
 
-  '@redis/bloom@5.7.0(@redis/client@5.7.0)':
+  '@redis/bloom@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.7.0
+      '@redis/client': 5.8.1
 
-  '@redis/client@5.7.0':
+  '@redis/client@5.8.1':
     dependencies:
       cluster-key-slot: 1.1.2
 
-  '@redis/json@5.7.0(@redis/client@5.7.0)':
+  '@redis/json@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.7.0
+      '@redis/client': 5.8.1
 
-  '@redis/search@5.7.0(@redis/client@5.7.0)':
+  '@redis/search@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.7.0
+      '@redis/client': 5.8.1
 
-  '@redis/time-series@5.7.0(@redis/client@5.7.0)':
+  '@redis/time-series@5.8.1(@redis/client@5.8.1)':
     dependencies:
-      '@redis/client': 5.7.0
+      '@redis/client': 5.8.1
 
   '@rollup/plugin-alias@5.1.1(rollup@4.46.2)':
     optionalDependencies:
@@ -5443,7 +5458,7 @@ snapshots:
 
   js-base64@3.7.7: {}
 
-  js-tiktoken@1.0.20:
+  js-tiktoken@1.0.21:
     dependencies:
       base64-js: 1.5.1
 
@@ -5889,13 +5904,13 @@ snapshots:
 
   real-require@0.2.0: {}
 
-  redis@5.7.0:
+  redis@5.8.1:
     dependencies:
-      '@redis/bloom': 5.7.0(@redis/client@5.7.0)
-      '@redis/client': 5.7.0
-      '@redis/json': 5.7.0(@redis/client@5.7.0)
-      '@redis/search': 5.7.0(@redis/client@5.7.0)
-      '@redis/time-series': 5.7.0(@redis/client@5.7.0)
+      '@redis/bloom': 5.8.1(@redis/client@5.8.1)
+      '@redis/client': 5.8.1
+      '@redis/json': 5.8.1(@redis/client@5.8.1)
+      '@redis/search': 5.8.1(@redis/client@5.8.1)
+      '@redis/time-series': 5.8.1(@redis/client@5.8.1)
 
   regex-recursion@5.1.1:
     dependencies:
