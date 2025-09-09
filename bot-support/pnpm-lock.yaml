@@ -22,8 +22,8 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))
       '@mastra/mcp':
-        specifier: ^0.11.0
-        version: 0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)
+        specifier: ^0.12.0
+        version: 0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)
       '@mastra/memory':
         specifier: ^0.14.0
         version: 0.14.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)
@@ -538,6 +538,12 @@ packages:
       '@mastra/core': '>=0.15.2-0 <0.16.0-0'
       zod: ^3.25.0 || ^4.0.0
 
+  '@mastra/mcp@0.12.0':
+    resolution: {integrity: sha512-KODbJ/ztABQrWeIRyDDYM031hMY91gOZZ42wiJQo9JbtX38nXlpcoVSz5Pqm+4WIIDMfz32gcT1V4ie8979C3Q==}
+    peerDependencies:
+      '@mastra/core': '>=0.16.1-0 <0.17.0-0'
+      zod: ^3.25.0 || ^4.0.0
+
   '@mastra/memory@0.14.2':
     resolution: {integrity: sha512-wFfZJcuiaNnlPnBmumW9q1fuYUUqsmGyyIPuL1bHewJ++wsbEmex/jLmBeGnyV+vopG0Xy6m1KUNwjuAJi8BtA==}
     peerDependencies:
@@ -564,6 +570,10 @@ packages:
 
   '@modelcontextprotocol/sdk@1.17.4':
     resolution: {integrity: sha512-zq24hfuAmmlNZvik0FLI58uE5sriN0WWsQzIlYnzSuKDAHFqJtBFrl/LfB1NLgJT5Y7dEBzaX4yAKqOPrcetaw==}
+    engines: {node: '>=18'}
+
+  '@modelcontextprotocol/sdk@1.17.5':
+    resolution: {integrity: sha512-QakrKIGniGuRVfWBdMsDea/dx1PNE739QJ7gCM41s9q+qaCYTHCdsIBXQVVXry3mfWAiaM9kT22Hyz53Uw8mfg==}
     engines: {node: '>=18'}
 
   '@neon-rs/load@0.0.4':
@@ -3362,6 +3372,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@mastra/mcp@0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)':
+    dependencies:
+      '@apidevtools/json-schema-ref-parser': 14.1.1
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.0.17)
+      '@modelcontextprotocol/sdk': 1.17.5
+      date-fns: 4.1.0
+      exit-hook: 4.0.0
+      fast-deep-equal: 3.1.3
+      uuid: 11.1.0
+      zod: 4.0.17
+      zod-from-json-schema: 0.5.0
+      zod-from-json-schema-v3: zod-from-json-schema@0.0.5
+    transitivePeerDependencies:
+      - supports-color
+
   '@mastra/memory@0.14.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)':
     dependencies:
       '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.0.17)
@@ -3412,6 +3437,23 @@ snapshots:
       cross-spawn: 7.0.6
       eventsource: 3.0.7
       eventsource-parser: 3.0.5
+      express: 5.1.0
+      express-rate-limit: 7.5.1(express@5.1.0)
+      pkce-challenge: 5.0.0
+      raw-body: 3.0.0
+      zod: 3.25.76
+      zod-to-json-schema: 3.24.6(zod@3.25.76)
+    transitivePeerDependencies:
+      - supports-color
+
+  '@modelcontextprotocol/sdk@1.17.5':
+    dependencies:
+      ajv: 6.12.6
+      content-type: 1.0.5
+      cors: 2.8.5
+      cross-spawn: 7.0.6
+      eventsource: 3.0.7
+      eventsource-parser: 3.0.6
       express: 5.1.0
       express-rate-limit: 7.5.1(express@5.1.0)
       pkce-challenge: 5.0.0
@@ -4761,7 +4803,7 @@ snapshots:
 
   eventsource@3.0.7:
     dependencies:
-      eventsource-parser: 3.0.5
+      eventsource-parser: 3.0.6
 
   execa@9.6.0:
     dependencies:
