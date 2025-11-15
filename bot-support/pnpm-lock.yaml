@@ -29,7 +29,7 @@ importers:
         version: 0.14.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)
       ai:
         specifier: ^5.0.0
-        version: 5.0.16(zod@4.0.17)
+        version: 5.0.52(zod@4.0.17)
       mastra:
         specifier: ^0.11.0
         version: 0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(@opentelemetry/api@1.9.0)(typescript@5.9.2)(zod@4.0.17)
@@ -49,14 +49,14 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@1.0.7':
-    resolution: {integrity: sha512-Athrq7OARuNc0iHZJP6InhSQ53tImCc990vMWyR1UHaZgPZJbXjKhIMiOj54F0I0Nlemx48V4fHYUTfLkJotnQ==}
+  '@ai-sdk/gateway@1.0.29':
+    resolution: {integrity: sha512-o9LtmBiG2WAgs3GAmL79F8idan/UupxHG8Tyr2gP4aUSOzflM0bsvfzozBp8x6WatQnOx+Pio7YNw45Y6I16iw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
 
-  '@ai-sdk/gateway@1.0.8':
-    resolution: {integrity: sha512-yiHYz0bAHEvhL+fSUBI2dNmyj0LOI8zw5qrYpa4gp1ojPgZq/7T1WXoIWRmVdjQwvT4PzSmRKLtbMPfz+umgfw==}
+  '@ai-sdk/gateway@1.0.7':
+    resolution: {integrity: sha512-Athrq7OARuNc0iHZJP6InhSQ53tImCc990vMWyR1UHaZgPZJbXjKhIMiOj54F0I0Nlemx48V4fHYUTfLkJotnQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -85,8 +85,8 @@ packages:
     peerDependencies:
       zod: ^3.25.76 || ^4
 
-  '@ai-sdk/provider-utils@3.0.4':
-    resolution: {integrity: sha512-/3Z6lfUp8r+ewFd9yzHkCmPlMOJUXup2Sx3aoUyrdXLhOmAfHRl6Z4lDbIdV0uvw/QYoBcVLJnvXN7ncYeS3uQ==}
+  '@ai-sdk/provider-utils@3.0.9':
+    resolution: {integrity: sha512-Pm571x5efqaI4hf9yW4KsVlDBDme8++UepZRnq+kqVBWWjgvGhQlzU8glaFq0YJEB9kkxZHbRRyVeHoV2sRYaQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -1575,8 +1575,8 @@ packages:
     peerDependencies:
       zod: ^3.25.76 || ^4
 
-  ai@5.0.16:
-    resolution: {integrity: sha512-shrrGo0i1cd3y8+/W9KpnRexqUpOgQ6Qj0yccKr4fQz4lMP6yKejNxAkOyaUYOqkM0OYovAYa6kyNxzZNdEUOw==}
+  ai@5.0.52:
+    resolution: {integrity: sha512-GLlRHjMlvN9+w7UYGxCpUQ8GgCRv5Z+JCprRH3Q8YbXJ/JyIc6EP9+YRUmQsyExX/qQsuehe7y/LLygarbSTOw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -2939,16 +2939,16 @@ packages:
 
 snapshots:
 
+  '@ai-sdk/gateway@1.0.29(zod@4.0.17)':
+    dependencies:
+      '@ai-sdk/provider': 2.0.0
+      '@ai-sdk/provider-utils': 3.0.9(zod@4.0.17)
+      zod: 4.0.17
+
   '@ai-sdk/gateway@1.0.7(zod@4.0.17)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@ai-sdk/provider-utils': 3.0.3(zod@4.0.17)
-      zod: 4.0.17
-
-  '@ai-sdk/gateway@1.0.8(zod@4.0.17)':
-    dependencies:
-      '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.4(zod@4.0.17)
       zod: 4.0.17
 
   '@ai-sdk/openai@2.0.6(zod@4.0.17)':
@@ -2980,13 +2980,12 @@ snapshots:
       zod: 4.0.17
       zod-to-json-schema: 3.24.6(zod@4.0.17)
 
-  '@ai-sdk/provider-utils@3.0.4(zod@4.0.17)':
+  '@ai-sdk/provider-utils@3.0.9(zod@4.0.17)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
-      eventsource-parser: 3.0.5
+      eventsource-parser: 3.0.6
       zod: 4.0.17
-      zod-to-json-schema: 3.24.6(zod@4.0.17)
 
   '@ai-sdk/provider@1.1.3':
     dependencies:
@@ -3493,7 +3492,7 @@ snapshots:
       '@ai-sdk/provider': 1.1.3
       '@ai-sdk/provider-utils': 2.2.8(zod@4.0.17)
       '@ai-sdk/ui-utils': 1.2.11(zod@4.0.17)
-      '@mastra/schema-compat': 0.10.5(ai@5.0.16(zod@4.0.17))(zod@4.0.17)
+      '@mastra/schema-compat': 0.10.5(ai@5.0.52(zod@4.0.17))(zod@4.0.17)
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/auto-instrumentations-node': 0.62.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.0.1(@opentelemetry/api@1.9.0))
       '@opentelemetry/core': 2.0.1(@opentelemetry/api@1.9.0)
@@ -3508,7 +3507,7 @@ snapshots:
       '@opentelemetry/sdk-trace-node': 2.0.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.36.0
       '@sindresorhus/slugify': 2.2.1
-      ai: 5.0.16(zod@4.0.17)
+      ai: 5.0.52(zod@4.0.17)
       date-fns: 3.6.0
       dotenv: 16.6.1
       hono: 4.8.10
@@ -3604,9 +3603,9 @@ snapshots:
   '@mastra/memory@0.14.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)':
     dependencies:
       '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.0.17)
-      '@mastra/schema-compat': 0.11.1(ai@5.0.16(zod@4.0.17))(zod@4.0.17)
+      '@mastra/schema-compat': 0.11.1(ai@5.0.52(zod@4.0.17))(zod@4.0.17)
       '@upstash/redis': 1.35.3
-      ai: 5.0.16(zod@4.0.17)
+      ai: 5.0.52(zod@4.0.17)
       ai-v5: ai@5.0.15(zod@4.0.17)
       async-mutex: 0.5.0
       js-tiktoken: 1.0.20
@@ -3621,17 +3620,17 @@ snapshots:
     transitivePeerDependencies:
       - pg-native
 
-  '@mastra/schema-compat@0.10.5(ai@5.0.16(zod@4.0.17))(zod@4.0.17)':
+  '@mastra/schema-compat@0.10.5(ai@5.0.52(zod@4.0.17))(zod@4.0.17)':
     dependencies:
-      ai: 5.0.16(zod@4.0.17)
+      ai: 5.0.52(zod@4.0.17)
       json-schema: 0.4.0
       zod: 4.0.17
       zod-from-json-schema: 0.0.5
       zod-to-json-schema: 3.24.6(zod@4.0.17)
 
-  '@mastra/schema-compat@0.11.1(ai@5.0.16(zod@4.0.17))(zod@4.0.17)':
+  '@mastra/schema-compat@0.11.1(ai@5.0.52(zod@4.0.17))(zod@4.0.17)':
     dependencies:
-      ai: 5.0.16(zod@4.0.17)
+      ai: 5.0.52(zod@4.0.17)
       json-schema: 0.4.0
       zod: 4.0.17
       zod-from-json-schema: 0.5.0
@@ -4734,11 +4733,11 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       zod: 4.0.17
 
-  ai@5.0.16(zod@4.0.17):
+  ai@5.0.52(zod@4.0.17):
     dependencies:
-      '@ai-sdk/gateway': 1.0.8(zod@4.0.17)
+      '@ai-sdk/gateway': 1.0.29(zod@4.0.17)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.4(zod@4.0.17)
+      '@ai-sdk/provider-utils': 3.0.9(zod@4.0.17)
       '@opentelemetry/api': 1.9.0
       zod: 4.0.17
 
