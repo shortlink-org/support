@@ -32,7 +32,7 @@ importers:
         version: 5.0.16(zod@4.0.17)
       mastra:
         specifier: ^0.11.0
-        version: 0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(@opentelemetry/api@1.9.0)(typescript@5.9.2)(zod@4.0.17)
+        version: 0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(@opentelemetry/api@1.9.0)(typescript@5.9.3)(zod@4.0.17)
       zod:
         specifier: ^4.0.14
         version: 4.0.17
@@ -45,7 +45,7 @@ importers:
         version: 4.20.6
       typescript:
         specifier: ^5.9.2
-        version: 5.9.2
+        version: 5.9.3
 
 packages:
 
@@ -1503,6 +1503,9 @@ packages:
   '@standard-schema/spec@1.0.0':
     resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@types/aws-lambda@8.10.150':
     resolution: {integrity: sha512-AX+AbjH/rH5ezX1fbK8onC/a+HyQHo7QGmvoxAE42n22OsciAxvZoZNEr22tbXs8WfP1nIsBjKDpgPm3HjOZbA==}
 
@@ -2793,8 +2796,8 @@ packages:
     peerDependencies:
       typescript: ^4.7.2 || ^5
 
-  typescript@5.9.2:
-    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2975,7 +2978,7 @@ snapshots:
   '@ai-sdk/provider-utils@3.0.3(zod@4.0.17)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@standard-schema/spec': 1.0.0
+      '@standard-schema/spec': 1.1.0
       eventsource-parser: 3.0.6
       zod: 4.0.17
       zod-to-json-schema: 3.24.6(zod@4.0.17)
@@ -3538,7 +3541,7 @@ snapshots:
       - valibot
       - zod-openapi
 
-  '@mastra/deployer@0.15.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(typescript@5.9.2)(zod@4.0.17)':
+  '@mastra/deployer@0.15.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(typescript@5.9.3)(zod@4.0.17)':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/helper-module-imports': 7.27.1
@@ -3567,7 +3570,7 @@ snapshots:
       rollup: 4.47.1
       rollup-plugin-esbuild: 6.2.1(esbuild@0.25.9)(rollup@4.47.1)
       rollup-plugin-node-externals: 8.0.1(rollup@4.47.1)
-      typescript-paths: 1.5.1(typescript@5.9.2)
+      typescript-paths: 1.5.1(typescript@5.9.3)
       zod: 4.0.17
     transitivePeerDependencies:
       - supports-color
@@ -4657,6 +4660,8 @@ snapshots:
 
   '@standard-schema/spec@1.0.0': {}
 
+  '@standard-schema/spec@1.1.0': {}
+
   '@types/aws-lambda@8.10.150': {}
 
   '@types/bunyan@1.8.11':
@@ -5429,11 +5434,11 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  mastra@0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(@opentelemetry/api@1.9.0)(typescript@5.9.2)(zod@4.0.17):
+  mastra@0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(@opentelemetry/api@1.9.0)(typescript@5.9.3)(zod@4.0.17):
     dependencies:
       '@clack/prompts': 0.11.0
       '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.0.17)
-      '@mastra/deployer': 0.15.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(typescript@5.9.2)(zod@4.0.17)
+      '@mastra/deployer': 0.15.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(typescript@5.9.3)(zod@4.0.17)
       '@mastra/loggers': 0.10.9(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))
       '@mastra/mcp': 0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.0.17))(zod@4.0.17)
       '@opentelemetry/auto-instrumentations-node': 0.62.1(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.0.1(@opentelemetry/api@1.9.0))
@@ -5989,11 +5994,11 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.1
 
-  typescript-paths@1.5.1(typescript@5.9.2):
+  typescript-paths@1.5.1(typescript@5.9.3):
     dependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
 
-  typescript@5.9.2: {}
+  typescript@5.9.3: {}
 
   ufo@1.6.1: {}
 
