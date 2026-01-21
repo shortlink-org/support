@@ -1,5 +1,5 @@
 # Use Node.js 18 Alpine as base image
-FROM node:22-alpine AS base
+FROM node:24-alpine AS base
 
 # Set working directory
 WORKDIR /usr/local/app
@@ -35,7 +35,7 @@ COPY . .
 RUN pnpm build
 
 # Production stage
-FROM node:22-alpine AS production
+FROM node:24-alpine AS production
 
 # Set working directory
 WORKDIR /usr/local/app
