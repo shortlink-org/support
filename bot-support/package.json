@@ -34,7 +34,7 @@
     "@mastra/mcp": "^0.11.0",
     "@mastra/memory": "^0.14.0",
     "ai": "^5.0.0",
-    "mastra": "^0.11.0",
+    "mastra": "^0.18.0",
     "zod": "^4.0.14"
   },
   "devDependencies": {
