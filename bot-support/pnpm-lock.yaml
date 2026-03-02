@@ -14,28 +14,28 @@ importers:
     dependencies:
       '@ai-sdk/openai':
         specifier: ^2.0.0
-        version: 2.0.6(zod@4.3.5)
+        version: 2.0.6(zod@4.3.6)
       '@mastra/core':
         specifier: ^0.12.1
-        version: 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
+        version: 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
       '@mastra/libsql':
         specifier: ^0.12.0
-        version: 0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))
+        version: 0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))
       '@mastra/mcp':
         specifier: ^0.11.0
-        version: 0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(zod@4.3.5)
+        version: 0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(zod@4.3.6)
       '@mastra/memory':
         specifier: ^1.0.0
-        version: 1.5.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(zod@4.3.5)
+        version: 1.5.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(zod@4.3.6)
       ai:
         specifier: ^5.0.0
-        version: 5.0.16(zod@4.3.5)
+        version: 5.0.16(zod@4.3.6)
       mastra:
         specifier: ^1.0.0
-        version: 1.0.1(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(typescript@5.9.3)(zod@4.3.5)
+        version: 1.0.1(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(typescript@5.9.3)(zod@4.3.6)
       zod:
         specifier: ^4.0.14
-        version: 4.3.5
+        version: 4.3.6
     devDependencies:
       '@types/node':
         specifier: ^24.1.0
@@ -2798,45 +2798,45 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.3.5:
-    resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
+  zod@4.3.6:
+    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
 snapshots:
 
-  '@ai-sdk/gateway@1.0.8(zod@4.3.5)':
+  '@ai-sdk/gateway@1.0.8(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.4(zod@4.3.5)
-      zod: 4.3.5
+      '@ai-sdk/provider-utils': 3.0.4(zod@4.3.6)
+      zod: 4.3.6
 
-  '@ai-sdk/openai@2.0.6(zod@4.3.5)':
+  '@ai-sdk/openai@2.0.6(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.1(zod@4.3.5)
-      zod: 4.3.5
+      '@ai-sdk/provider-utils': 3.0.1(zod@4.3.6)
+      zod: 4.3.6
 
-  '@ai-sdk/provider-utils@2.2.8(zod@4.3.5)':
+  '@ai-sdk/provider-utils@2.2.8(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
       nanoid: 3.3.11
       secure-json-parse: 2.7.0
-      zod: 4.3.5
+      zod: 4.3.6
 
-  '@ai-sdk/provider-utils@3.0.1(zod@4.3.5)':
+  '@ai-sdk/provider-utils@3.0.1(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.3
-      zod: 4.3.5
-      zod-to-json-schema: 3.24.6(zod@4.3.5)
+      zod: 4.3.6
+      zod-to-json-schema: 3.24.6(zod@4.3.6)
 
-  '@ai-sdk/provider-utils@3.0.4(zod@4.3.5)':
+  '@ai-sdk/provider-utils@3.0.4(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.5
-      zod: 4.3.5
-      zod-to-json-schema: 3.24.6(zod@4.3.5)
+      zod: 4.3.6
+      zod-to-json-schema: 3.24.6(zod@4.3.6)
 
   '@ai-sdk/provider@1.1.3':
     dependencies:
@@ -2846,12 +2846,12 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/ui-utils@1.2.11(zod@4.3.5)':
+  '@ai-sdk/ui-utils@1.2.11(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
-      '@ai-sdk/provider-utils': 2.2.8(zod@4.3.5)
-      zod: 4.3.5
-      zod-to-json-schema: 3.24.6(zod@4.3.5)
+      '@ai-sdk/provider-utils': 2.2.8(zod@4.3.6)
+      zod: 4.3.6
+      zod-to-json-schema: 3.24.6(zod@4.3.6)
 
   '@apidevtools/json-schema-ref-parser@11.9.3':
     dependencies:
@@ -3304,12 +3304,12 @@ snapshots:
   '@libsql/win32-x64-msvc@0.5.17':
     optional: true
 
-  '@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5)':
+  '@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
-      '@ai-sdk/provider-utils': 2.2.8(zod@4.3.5)
-      '@ai-sdk/ui-utils': 1.2.11(zod@4.3.5)
-      '@mastra/schema-compat': 0.10.5(ai@5.0.16(zod@4.3.5))(zod@4.3.5)
+      '@ai-sdk/provider-utils': 2.2.8(zod@4.3.6)
+      '@ai-sdk/ui-utils': 1.2.11(zod@4.3.6)
+      '@mastra/schema-compat': 0.10.5(ai@5.0.16(zod@4.3.6))(zod@4.3.6)
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/auto-instrumentations-node': 0.62.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.0.1(@opentelemetry/api@1.9.0))
       '@opentelemetry/core': 2.0.1(@opentelemetry/api@1.9.0)
@@ -3324,11 +3324,11 @@ snapshots:
       '@opentelemetry/sdk-trace-node': 2.0.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.36.0
       '@sindresorhus/slugify': 2.2.1
-      ai: 5.0.16(zod@4.3.5)
+      ai: 5.0.16(zod@4.3.6)
       date-fns: 3.6.0
       dotenv: 16.6.1
       hono: 4.8.10
-      hono-openapi: 0.4.8(hono@4.8.10)(openapi-types@12.1.3)(zod@4.3.5)
+      hono-openapi: 0.4.8(hono@4.8.10)(openapi-types@12.1.3)(zod@4.3.6)
       json-schema: 0.4.0
       json-schema-to-zod: 2.6.1
       pino: 9.7.0
@@ -3336,8 +3336,8 @@ snapshots:
       radash: 12.1.1
       sift: 17.1.3
       xstate: 5.20.1
-      zod: 4.3.5
-      zod-to-json-schema: 3.24.6(zod@4.3.5)
+      zod: 4.3.6
+      zod-to-json-schema: 3.24.6(zod@4.3.6)
     transitivePeerDependencies:
       - '@hono/arktype-validator'
       - '@hono/effect-validator'
@@ -3354,12 +3354,12 @@ snapshots:
       - valibot
       - zod-openapi
 
-  '@mastra/deployer@1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(typescript@5.9.3)(zod@4.3.5)':
+  '@mastra/deployer@1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(typescript@5.9.3)(zod@4.3.6)':
     dependencies:
       '@babel/core': 7.28.6
       '@babel/preset-typescript': 7.27.1(@babel/core@7.28.6)
-      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
-      '@mastra/server': 1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(zod@4.3.5)
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
+      '@mastra/server': 1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(zod@4.3.6)
       '@optimize-lodash/rollup-plugin': 5.0.2(rollup@4.50.2)
       '@rollup/plugin-alias': 6.0.0(rollup@4.50.2)
       '@rollup/plugin-commonjs': 29.0.0(rollup@4.50.2)
@@ -3381,71 +3381,71 @@ snapshots:
       strip-json-comments: 5.0.3
       tinyglobby: 0.2.15
       typescript-paths: 1.5.1(typescript@5.9.3)
-      zod: 4.3.5
+      zod: 4.3.6
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  '@mastra/libsql@0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))':
+  '@mastra/libsql@0.12.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))':
     dependencies:
       '@libsql/client': 0.15.10
-      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@mastra/loggers@1.0.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))':
+  '@mastra/loggers@1.0.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))':
     dependencies:
-      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
       pino: 10.2.1
       pino-pretty: 13.1.1
 
-  '@mastra/mcp@0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(zod@4.3.5)':
+  '@mastra/mcp@0.11.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(zod@4.3.6)':
     dependencies:
       '@apidevtools/json-schema-ref-parser': 14.1.1
-      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
       '@modelcontextprotocol/sdk': 1.17.4
       date-fns: 4.1.0
       exit-hook: 4.0.0
       fast-deep-equal: 3.1.3
       uuid: 11.1.0
-      zod: 4.3.5
+      zod: 4.3.6
       zod-from-json-schema: 0.0.5
     transitivePeerDependencies:
       - supports-color
 
-  '@mastra/memory@1.5.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(zod@4.3.5)':
+  '@mastra/memory@1.5.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(zod@4.3.6)':
     dependencies:
-      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
-      '@mastra/schema-compat': 1.1.3(zod@4.3.5)
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
+      '@mastra/schema-compat': 1.1.3(zod@4.3.6)
       async-mutex: 0.5.0
       js-tiktoken: 1.0.21
       json-schema: 0.4.0
       lru-cache: 11.2.6
       xxhash-wasm: 1.1.0
-      zod: 4.3.5
+      zod: 4.3.6
 
-  '@mastra/schema-compat@0.10.5(ai@5.0.16(zod@4.3.5))(zod@4.3.5)':
+  '@mastra/schema-compat@0.10.5(ai@5.0.16(zod@4.3.6))(zod@4.3.6)':
     dependencies:
-      ai: 5.0.16(zod@4.3.5)
+      ai: 5.0.16(zod@4.3.6)
       json-schema: 0.4.0
-      zod: 4.3.5
+      zod: 4.3.6
       zod-from-json-schema: 0.0.5
-      zod-to-json-schema: 3.24.6(zod@4.3.5)
+      zod-to-json-schema: 3.24.6(zod@4.3.6)
 
-  '@mastra/schema-compat@1.1.3(zod@4.3.5)':
+  '@mastra/schema-compat@1.1.3(zod@4.3.6)':
     dependencies:
       json-schema-to-zod: 2.7.0
-      zod: 4.3.5
+      zod: 4.3.6
       zod-from-json-schema: 0.5.0
       zod-from-json-schema-v3: zod-from-json-schema@0.0.5
-      zod-to-json-schema: 3.24.6(zod@4.3.5)
+      zod-to-json-schema: 3.24.6(zod@4.3.6)
 
-  '@mastra/server@1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(zod@4.3.5)':
+  '@mastra/server@1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(zod@4.3.6)':
     dependencies:
-      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
       hono: 4.11.4
-      zod: 4.3.5
+      zod: 4.3.6
 
   '@modelcontextprotocol/sdk@1.17.4':
     dependencies:
@@ -4386,13 +4386,13 @@ snapshots:
 
   agent-base@7.1.4: {}
 
-  ai@5.0.16(zod@4.3.5):
+  ai@5.0.16(zod@4.3.6):
     dependencies:
-      '@ai-sdk/gateway': 1.0.8(zod@4.3.5)
+      '@ai-sdk/gateway': 1.0.8(zod@4.3.6)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.4(zod@4.3.5)
+      '@ai-sdk/provider-utils': 3.0.4(zod@4.3.6)
       '@opentelemetry/api': 1.9.0
-      zod: 4.3.5
+      zod: 4.3.6
 
   ajv@6.12.6:
     dependencies:
@@ -4925,13 +4925,13 @@ snapshots:
 
   help-me@5.0.0: {}
 
-  hono-openapi@0.4.8(hono@4.8.10)(openapi-types@12.1.3)(zod@4.3.5):
+  hono-openapi@0.4.8(hono@4.8.10)(openapi-types@12.1.3)(zod@4.3.6):
     dependencies:
       json-schema-walker: 2.0.0
       openapi-types: 12.1.3
     optionalDependencies:
       hono: 4.8.10
-      zod: 4.3.5
+      zod: 4.3.6
 
   hono@4.11.4: {}
 
@@ -5091,13 +5091,13 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  mastra@1.0.1(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(typescript@5.9.3)(zod@4.3.5):
+  mastra@1.0.1(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(typescript@5.9.3)(zod@4.3.6):
     dependencies:
       '@clack/prompts': 0.11.0
       '@expo/devcert': 1.2.1
-      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.5)
-      '@mastra/deployer': 1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(typescript@5.9.3)(zod@4.3.5)
-      '@mastra/loggers': 1.0.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))
+      '@mastra/core': 0.12.1(openapi-types@12.1.3)(zod@4.3.6)
+      '@mastra/deployer': 1.0.4(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))(typescript@5.9.3)(zod@4.3.6)
+      '@mastra/loggers': 1.0.0(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.6))
       commander: 14.0.2
       dotenv: 17.2.3
       execa: 9.6.1
@@ -5112,7 +5112,7 @@ snapshots:
       shell-quote: 1.8.3
       strip-json-comments: 5.0.3
       yocto-spinner: 1.0.0
-      zod: 4.3.5
+      zod: 4.3.6
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5794,16 +5794,16 @@ snapshots:
 
   zod-from-json-schema@0.5.0:
     dependencies:
-      zod: 4.3.5
+      zod: 4.3.6
 
   zod-to-json-schema@3.24.6(zod@3.25.76):
     dependencies:
       zod: 3.25.76
 
-  zod-to-json-schema@3.24.6(zod@4.3.5):
+  zod-to-json-schema@3.24.6(zod@4.3.6):
     dependencies:
-      zod: 4.3.5
+      zod: 4.3.6
 
   zod@3.25.76: {}
 
-  zod@4.3.5: {}
+  zod@4.3.6: {}
