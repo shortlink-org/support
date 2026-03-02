@@ -29,7 +29,7 @@ importers:
         version: 1.5.2(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(zod@4.3.5)
       ai:
         specifier: ^5.0.0
-        version: 5.0.16(zod@4.3.5)
+        version: 5.0.52(zod@4.3.5)
       mastra:
         specifier: ^1.0.0
         version: 1.0.1(@mastra/core@0.12.1(openapi-types@12.1.3)(zod@4.3.5))(typescript@5.9.3)(zod@4.3.5)
@@ -49,8 +49,8 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@1.0.8':
-    resolution: {integrity: sha512-yiHYz0bAHEvhL+fSUBI2dNmyj0LOI8zw5qrYpa4gp1ojPgZq/7T1WXoIWRmVdjQwvT4PzSmRKLtbMPfz+umgfw==}
+  '@ai-sdk/gateway@1.0.29':
+    resolution: {integrity: sha512-o9LtmBiG2WAgs3GAmL79F8idan/UupxHG8Tyr2gP4aUSOzflM0bsvfzozBp8x6WatQnOx+Pio7YNw45Y6I16iw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -73,8 +73,8 @@ packages:
     peerDependencies:
       zod: ^3.25.76 || ^4
 
-  '@ai-sdk/provider-utils@3.0.4':
-    resolution: {integrity: sha512-/3Z6lfUp8r+ewFd9yzHkCmPlMOJUXup2Sx3aoUyrdXLhOmAfHRl6Z4lDbIdV0uvw/QYoBcVLJnvXN7ncYeS3uQ==}
+  '@ai-sdk/provider-utils@3.0.9':
+    resolution: {integrity: sha512-Pm571x5efqaI4hf9yW4KsVlDBDme8++UepZRnq+kqVBWWjgvGhQlzU8glaFq0YJEB9kkxZHbRRyVeHoV2sRYaQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -1291,6 +1291,9 @@ packages:
   '@standard-schema/spec@1.0.0':
     resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@types/aws-lambda@8.10.150':
     resolution: {integrity: sha512-AX+AbjH/rH5ezX1fbK8onC/a+HyQHo7QGmvoxAE42n22OsciAxvZoZNEr22tbXs8WfP1nIsBjKDpgPm3HjOZbA==}
 
@@ -1354,8 +1357,8 @@ packages:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
     engines: {node: '>= 14'}
 
-  ai@5.0.16:
-    resolution: {integrity: sha512-shrrGo0i1cd3y8+/W9KpnRexqUpOgQ6Qj0yccKr4fQz4lMP6yKejNxAkOyaUYOqkM0OYovAYa6kyNxzZNdEUOw==}
+  ai@5.0.52:
+    resolution: {integrity: sha512-GLlRHjMlvN9+w7UYGxCpUQ8GgCRv5Z+JCprRH3Q8YbXJ/JyIc6EP9+YRUmQsyExX/qQsuehe7y/LLygarbSTOw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -1686,6 +1689,10 @@ packages:
   eventsource-parser@3.0.5:
     resolution: {integrity: sha512-bSRG85ZrMdmWtm7qkF9He9TNRzc/Bm99gEJMaQoHJ9E6Kv9QBbsldh2oMj7iXmYNEAVvNgvv5vPorG6W+XtBhQ==}
     engines: {node: '>=20.0.0'}
+
+  eventsource-parser@3.0.6:
+    resolution: {integrity: sha512-Vo1ab+QXPzZ4tCa8SwIHJFaSzy4R6SHf7BY79rFBDf0idraZWAkYrDjDj8uWaSm3S2TK+hJ7/t1CEmZ7jXw+pg==}
+    engines: {node: '>=18.0.0'}
 
   eventsource@3.0.7:
     resolution: {integrity: sha512-CRT1WTyuQoD771GW56XEZFQ/ZoSfWid1alKGDYMmkt2yl8UXrVR4pspqWNEcqKvVIzg6PAltWjxcSSPrboA4iA==}
@@ -2803,10 +2810,10 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/gateway@1.0.8(zod@4.3.5)':
+  '@ai-sdk/gateway@1.0.29(zod@4.3.5)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.4(zod@4.3.5)
+      '@ai-sdk/provider-utils': 3.0.9(zod@4.3.5)
       zod: 4.3.5
 
   '@ai-sdk/openai@2.0.6(zod@4.3.5)':
@@ -2830,13 +2837,12 @@ snapshots:
       zod: 4.3.5
       zod-to-json-schema: 3.24.6(zod@4.3.5)
 
-  '@ai-sdk/provider-utils@3.0.4(zod@4.3.5)':
+  '@ai-sdk/provider-utils@3.0.9(zod@4.3.5)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@standard-schema/spec': 1.0.0
-      eventsource-parser: 3.0.5
+      '@standard-schema/spec': 1.1.0
+      eventsource-parser: 3.0.6
       zod: 4.3.5
-      zod-to-json-schema: 3.24.6(zod@4.3.5)
 
   '@ai-sdk/provider@1.1.3':
     dependencies:
@@ -3309,7 +3315,7 @@ snapshots:
       '@ai-sdk/provider': 1.1.3
       '@ai-sdk/provider-utils': 2.2.8(zod@4.3.5)
       '@ai-sdk/ui-utils': 1.2.11(zod@4.3.5)
-      '@mastra/schema-compat': 0.10.5(ai@5.0.16(zod@4.3.5))(zod@4.3.5)
+      '@mastra/schema-compat': 0.10.5(ai@5.0.52(zod@4.3.5))(zod@4.3.5)
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/auto-instrumentations-node': 0.62.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.0.1(@opentelemetry/api@1.9.0))
       '@opentelemetry/core': 2.0.1(@opentelemetry/api@1.9.0)
@@ -3324,7 +3330,7 @@ snapshots:
       '@opentelemetry/sdk-trace-node': 2.0.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.36.0
       '@sindresorhus/slugify': 2.2.1
-      ai: 5.0.16(zod@4.3.5)
+      ai: 5.0.52(zod@4.3.5)
       date-fns: 3.6.0
       dotenv: 16.6.1
       hono: 4.8.10
@@ -3425,9 +3431,9 @@ snapshots:
       xxhash-wasm: 1.1.0
       zod: 4.3.5
 
-  '@mastra/schema-compat@0.10.5(ai@5.0.16(zod@4.3.5))(zod@4.3.5)':
+  '@mastra/schema-compat@0.10.5(ai@5.0.52(zod@4.3.5))(zod@4.3.5)':
     dependencies:
-      ai: 5.0.16(zod@4.3.5)
+      ai: 5.0.52(zod@4.3.5)
       json-schema: 0.4.0
       zod: 4.3.5
       zod-from-json-schema: 0.0.5
@@ -4321,6 +4327,8 @@ snapshots:
 
   '@standard-schema/spec@1.0.0': {}
 
+  '@standard-schema/spec@1.1.0': {}
+
   '@types/aws-lambda@8.10.150': {}
 
   '@types/bunyan@1.8.11':
@@ -4386,11 +4394,11 @@ snapshots:
 
   agent-base@7.1.4: {}
 
-  ai@5.0.16(zod@4.3.5):
+  ai@5.0.52(zod@4.3.5):
     dependencies:
-      '@ai-sdk/gateway': 1.0.8(zod@4.3.5)
+      '@ai-sdk/gateway': 1.0.29(zod@4.3.5)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.4(zod@4.3.5)
+      '@ai-sdk/provider-utils': 3.0.9(zod@4.3.5)
       '@opentelemetry/api': 1.9.0
       zod: 4.3.5
 
@@ -4695,6 +4703,8 @@ snapshots:
   eventsource-parser@3.0.3: {}
 
   eventsource-parser@3.0.5: {}
+
+  eventsource-parser@3.0.6: {}
 
   eventsource@3.0.7:
     dependencies:
