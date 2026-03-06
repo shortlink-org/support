@@ -39,7 +39,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^24.1.0
-        version: 24.3.0
+        version: 24.12.0
       tsx:
         specifier: ^4.20.3
         version: 4.20.6
@@ -1312,8 +1312,8 @@ packages:
   '@types/mysql@2.15.27':
     resolution: {integrity: sha512-YfWiV16IY0OeBfBCk8+hXKmdTKrKlwKN1MNKAPBu5JYxLwBEZl7QzeEpGnlZb3VMGJrrGmB84gXiH+ofs/TezA==}
 
-  '@types/node@24.3.0':
-    resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
+  '@types/node@24.12.0':
+    resolution: {integrity: sha512-GYDxsZi3ChgmckRT9HPU0WEhKLP08ev/Yfcq2AstjrDASOYCSXeyjDsHg4v5t4jOj7cyDX3vmprafKlWIG9MXQ==}
 
   '@types/oracledb@6.5.2':
     resolution: {integrity: sha512-kK1eBS/Adeyis+3OlBDMeQQuasIDLUYXsi2T15ccNJ0iyUpQ4xDF7svFu3+bGVrI0CMBUclPciz+lsQR3JX3TQ==}
@@ -2661,8 +2661,8 @@ packages:
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
-  undici-types@7.10.0:
-    resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
@@ -4325,11 +4325,11 @@ snapshots:
 
   '@types/bunyan@1.8.11':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
 
   '@types/estree@1.0.8': {}
 
@@ -4337,19 +4337,19 @@ snapshots:
 
   '@types/memcached@2.2.10':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
 
   '@types/mysql@2.15.27':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
 
-  '@types/node@24.3.0':
+  '@types/node@24.12.0':
     dependencies:
-      undici-types: 7.10.0
+      undici-types: 7.16.0
 
   '@types/oracledb@6.5.2':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
 
   '@types/pg-pool@2.0.6':
     dependencies:
@@ -4357,7 +4357,7 @@ snapshots:
 
   '@types/pg@8.15.4':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
       pg-protocol: 1.10.3
       pg-types: 2.2.0
 
@@ -4365,11 +4365,11 @@ snapshots:
 
   '@types/tedious@4.0.14':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
 
   '@zeit/schemas@2.36.0': {}
 
@@ -5356,7 +5356,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.3.0
+      '@types/node': 24.12.0
       long: 5.3.2
 
   proxy-addr@2.0.7:
@@ -5691,7 +5691,7 @@ snapshots:
 
   ufo@1.6.1: {}
 
-  undici-types@7.10.0: {}
+  undici-types@7.16.0: {}
 
   unicorn-magic@0.3.0: {}
 
